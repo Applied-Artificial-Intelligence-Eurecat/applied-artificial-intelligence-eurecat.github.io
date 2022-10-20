@@ -8,7 +8,7 @@ interface SectionProps {
 
 const Item = styled(Paper)(() => ({
     textAlign: 'center',
-    backgroundColor: '#043873',
+    backgroundColor: '#355171',
     square: true,
   }));
 
@@ -20,7 +20,7 @@ export function PrimarySection(props: SectionProps) {
     }} square={true}>
     <Box sx={{
       pt : 6,
-      pb : 2
+      pb : 8
     }}>
       <div>{props.children}</div>
     </Box>

@@ -3,6 +3,7 @@ import React from "react";
 import { selectPrimaryTitle } from "../features/counter/appReducer";
 import { useAppSelector } from "../app/hooks";
 
+
 interface ContentProps {
   children: any;
 }
@@ -15,8 +16,8 @@ export function Content(props: ContentProps) {
           xs: 5,
           sm: 10,
           md: 20,
-          lg: 30,
-          xl: 40,
+          lg: 40,
+          xl: 60,
         },
       }}
     >
