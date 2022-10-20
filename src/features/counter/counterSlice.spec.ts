@@ -1,20 +1,18 @@
 import counterReducer, {
-  CounterState,
+  AppState,
   increment,
   decrement,
   incrementByAmount,
-} from './counterSlice';
+} from './appReducer';
 
 describe('counter reducer', () => {
-  const initialState: CounterState = {
+  const initialState: AppState = {
     value: 3,
     status: 'idle',
+    title: 'Applied Artificial Intelligence',
   };
   it('should handle initial state', () => {
-    expect(counterReducer(undefined, { type: 'unknown' })).toEqual({
-      value: 0,
-      status: 'idle',
-    });
+    expect(counterReducer(undefined, { type: 'unknown' }).value).toEqual(0);
   });
 
   it('should handle increment', () => {
