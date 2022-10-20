@@ -3,38 +3,48 @@ import { PrimarySection } from "./components/PrimarySection";
 import { MainContent } from "./components/MainContent";
 import { DrawerAppBar } from "./components/DrawerAppBar";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { Publications } from "./components/publications/Publications";
+import { Team } from "./components/team/Team";
+import Grid from "@mui/material/Grid";
+import { Projects } from "./components/projects/Projects";
 import "./App.css";
 import eurecatLogo from "./assets/logo.png";
 import { Section } from "./components/Section";
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface Theme {
     blocks: {
       primary: string;
+      primaryText: string;
       secondary: string;
+      secondaryText: string;
     };
   }
   // allow configuration using `createTheme`
   interface ThemeOptions {
     blocks: {
       primary: string;
+      primaryText: string;
       secondary: string;
+      secondaryText: string;
     };
   }
 }
 
 function App() {
   const theme = createTheme({
-    blocks : {
-      primary: "ha",
-      secondary: "b",
+    blocks: {
+      primary: "#355171",
+      primaryText: "#ffffff",
+      secondary: "#ffffff",
+      secondaryText: "#000000",
     },
     palette: {
       primary: {
         main: "#8651CA",
       },
       secondary: {
-        main: "#ffffff"
+        main: "#ffffff",
       },
     },
   });
@@ -53,17 +63,71 @@ function App() {
         >
           <PrimarySection>
             <Box
-              component="img"
-              style={{
-                width: "450px",
+              sx={{
+                px: 2,
               }}
-              src={eurecatLogo}
-            />
-            
+            >
+              <Grid container>
+                <Grid item xs={0} lg={4}></Grid>
+                <Grid item xs={12} lg={4}>
+                <Box
+                  component="img"
+                  sx={{
+                    width: {
+                      xs: "95%",
+                      sm: "70%",
+                      md: "50%",
+                      lg : "95%"
+                    },
+                  }}
+                  src={eurecatLogo}
+                />
+                </Grid>
+                <Grid item xs={0} lg={4}></Grid>
+              </Grid>
+            </Box>
+
             <MainContent />
           </PrimarySection>
-          <Section title="Technologies we use" primary={true} theme={theme}>
+          <Section
+            title="Technologies we use"
+            primary={false}
+            theme={theme}
+            frameTitle={{ width: "270px", height: "29.69px" }}
+          >
             Hi
+          </Section>
+          <Section
+            title="Projects"
+            primary={true}
+            theme={theme}
+            frameTitle={{ width: "250px", height: "29.59px" }}
+          >
+            <Projects />
+          </Section>
+          <Section
+            title="Our public work"
+            primary={false}
+            theme={theme}
+            frameTitle={{ width: "250px", height: "29.69px" }}
+          >
+            Hi
+          </Section>
+          <Section
+            title="The team"
+            primary={true}
+            theme={theme}
+            frameTitle={{ width: "250px", height: "29.69px" }}
+          >
+            <Team />
+          </Section>
+          <Section
+            title="List of publications"
+            primary={false}
+            theme={theme}
+            frameTitle={{ width: "250px", height: "29.69px" }}
+          >
+            <Publications />
           </Section>
         </Box>
       </div>

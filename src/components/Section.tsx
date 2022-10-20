@@ -1,32 +1,86 @@
 import { Box, styled, Theme } from "@mui/material";
-import Paper from "@mui/material/Paper";
+
+import Card from "@mui/material/Card";
+import frameTitle from "../assets/frameTitle.svg";
+
+interface FrameProps {
+  width: string;
+  height: string;
+}
 
 interface SectionProps {
   title: string;
+  frameTitle: FrameProps;
   primary: boolean;
   children: any;
   theme: Theme;
 }
 
-const Item = styled(Paper)(({theme}) => ({
-  textAlign: "left",
-  backgroundColor: theme.palette.secondary.main,
-  square: true,
-}));
+interface ItemProps {
+  primary: boolean;
+  theme: Theme;
+  elevation: number;
+  square: boolean;
+  children: any;
+}
 
 export function Section(props: SectionProps) {
   return (
-    <Item elevation={3} style={{}} square={true} theme={props.theme}>
+    <Card
+      variant="outlined"
+      sx={{
+        borderRadius: 0,
+        background: props.primary
+          ? props.theme.blocks.primary
+          : props.theme.blocks.secondary,
+        color: props.primary
+          ? props.theme.blocks.primaryText
+          : props.theme.blocks.secondaryText,
+        pb: "20px",
+      }}
+    >
       <Box
         sx={{
-          pt: 2,
-          px: 10,
-          pb: 2,
+          pt: 5,
+          px: {
+            xs: 5,
+            sm: 10,
+            md: 20,
+            lg: 30,
+            xl: 50,
+          },
+          pb: 10,
         }}
       >
-        <h2>{props.title}</h2>
-        <div>{props.children}</div>
+        <Box
+          component="img"
+          style={{
+            display: "flex",
+            width: props.frameTitle.width,
+            height: props.frameTitle.height,
+            marginTop: "35px",
+            zIndex: "-1",
+          }}
+          src={frameTitle}
+        />
+        <Box
+          sx={{
+            mt: "-70px",
+            pl: "10px",
+            pb: "20px",
+          }}
+        >
+          <h2>{props.title}</h2>
+        </Box>
+        <Box
+          sx={{
+            px: "3%",
+            textAlign: 'center',
+          }}
+        >
+          <div>{props.children}</div>
+        </Box>
       </Box>
-    </Item>
+    </Card>
   );
 }
