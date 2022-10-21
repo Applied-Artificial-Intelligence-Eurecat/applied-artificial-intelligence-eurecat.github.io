@@ -43,7 +43,7 @@ export function Section(props: SectionProps) {
         sx={{
           pt: 5,
           px: {
-            xs: 5,
+            xs: 1,
             sm: 10,
             md: 20,
             lg: 30,
