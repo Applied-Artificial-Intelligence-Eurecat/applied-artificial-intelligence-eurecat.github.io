@@ -3,12 +3,15 @@ import { PrimarySection } from "./components/PrimarySection";
 import { MainContent } from "./components/MainContent";
 import { DrawerAppBar } from "./components/DrawerAppBar";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
+import Link from "@mui/material/Link";
 import { Publications } from "./components/publications/Publications";
 import { Team } from "./components/team/Team";
 import Grid from "@mui/material/Grid";
 import { Projects } from "./components/projects/Projects";
 import "./App.css";
 import eurecatLogo from "./assets/logo.png";
+import githubLogo from "./assets/githubLogo.png";
+
 import { Section } from "./components/Section";
 
 declare module "@mui/material/styles" {
@@ -70,18 +73,18 @@ function App() {
               <Grid container>
                 <Grid item xs={0} lg={4}></Grid>
                 <Grid item xs={12} lg={4}>
-                <Box
-                  component="img"
-                  sx={{
-                    width: {
-                      xs: "95%",
-                      sm: "70%",
-                      md: "50%",
-                      lg : "95%"
-                    },
-                  }}
-                  src={eurecatLogo}
-                />
+                  <Box
+                    component="img"
+                    sx={{
+                      width: {
+                        xs: "95%",
+                        sm: "70%",
+                        md: "50%",
+                        lg: "95%",
+                      },
+                    }}
+                    src={eurecatLogo}
+                  />
                 </Grid>
                 <Grid item xs={0} lg={4}></Grid>
               </Grid>
@@ -111,7 +114,27 @@ function App() {
             theme={theme}
             frameTitle={{ width: "250px", height: "29.69px" }}
           >
-            Hi
+            <Box component="div" sx={{ mt: 3 }}>
+              Currently, we do not have demonstrators, but check our
+              <Link
+                href="https://github.com/Applied-Artificial-Intelligence-Eurecat"
+                underline="hover"
+                sx={{ marginLeft: "5px" }}
+              >
+                Github
+                <Box
+                  component="img"
+                  alt="Github logo"
+                  src={githubLogo}
+                  sx={{
+                    height: "14px",
+                    marginRight: "2px",
+                    marginLeft: "5px",
+                  }}
+                />
+              </Link>{" "}
+              to see our public repositories!
+            </Box>
           </Section>
           <Section
             title="The team"
