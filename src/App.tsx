@@ -44,7 +44,7 @@ function App() {
     },
     palette: {
       primary: {
-        main: "#8651CA",
+        main: "#761F89",
       },
       secondary: {
         main: "#ffffff",
@@ -96,7 +96,7 @@ function App() {
             title="Technologies we use"
             primary={false}
             theme={theme}
-            frameTitle={{ width: "270px", height: "29.69px" }}
+            frameTitle={{ width: "200px", height: "30.69px" }}
           >
             The current section is in progress! You can contact to us to know which technologies we use.
           </Section>
@@ -104,7 +104,7 @@ function App() {
             title="Projects"
             primary={true}
             theme={theme}
-            frameTitle={{ width: "250px", height: "29.59px" }}
+            frameTitle={{ width: "170px", height: "29.59px" }}
           >
             <Projects />
           </Section>
@@ -140,7 +140,7 @@ function App() {
             title="The team"
             primary={true}
             theme={theme}
-            frameTitle={{ width: "250px", height: "29.69px" }}
+            frameTitle={{ width: "180px", height: "29.69px" }}
           >
             <Team />
           </Section>

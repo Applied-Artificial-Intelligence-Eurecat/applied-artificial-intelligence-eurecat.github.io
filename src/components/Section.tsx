@@ -53,19 +53,26 @@ export function Section(props: SectionProps) {
         }}
       >
         <Box
+        alignItems="left"
+
+        >
+        <Box
+        alignItems="left"
           component="img"
           style={{
             display: "flex",
             width: props.frameTitle.width,
             height: props.frameTitle.height,
-            marginTop: "35px",
+            marginTop: "40px",
+            marginLeft: "0px",
             zIndex: "-1",
           }}
           src={frameTitle}
         />
+        </Box>
         <Box
           sx={{
-            mt: "-70px",
+            mt: "-80px",
             pl: "10px",
             pb: "20px",
           }}
@@ -75,7 +82,7 @@ export function Section(props: SectionProps) {
         <Box
           sx={{
             px: "3%",
-            textAlign: 'center',
+            textAlign: "center",
           }}
         >
           <div>{props.children}</div>
