@@ -2,7 +2,11 @@ import { Box } from "@mui/system";
 import React from "react";
 import { selectPrimaryTitle } from "../features/counter/appReducer";
 import { useAppSelector } from "../app/hooks";
-
+import { Grid, Paper } from "@mui/material";
+import environmental from "../assets/mainsection/environmental.png";
+import industrial from "../assets/mainsection/industrial.png";
+import space from "../assets/mainsection/space.png";
+import water from "../assets/mainsection/water.png";
 
 interface ContentProps {
   children: any;
@@ -42,7 +46,54 @@ export function MainContent() {
         many other fields as construction, agrifood, environmental and climate
         change.
       </Box>
-
+      <Box
+        sx={{
+          pt: 5,
+        }}
+      >
+        
+          <Grid container spacing={3} justifyContent="center">
+            <Grid item xs={4}>
+              <Box
+                component="img"
+                alt="Image of environmental"
+                src={environmental}
+                sx={{
+                  width: "100%",
+                  pb: 2,
+                }}
+              />
+              <Box
+                component="img"
+                alt="Image of space"
+                src={space}
+                sx={{
+                  width: "100%",
+                }}
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <Box
+                component="img"
+                alt="Image of industrial"
+                src={industrial}
+                sx={{
+                  width: "100%",
+                  pb: 2,
+                }}
+              />
+              <Box
+                component="img"
+                alt="Image of water"
+                src={water}
+                sx={{
+                  width: "100%",
+                  height: "45%",
+                }}
+              />
+            </Grid>
+          </Grid>
+      </Box>
       <Box
         sx={{
           py: 3,

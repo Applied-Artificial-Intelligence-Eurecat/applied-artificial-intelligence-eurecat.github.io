@@ -98,7 +98,7 @@ function App() {
             theme={theme}
             frameTitle={{ width: "270px", height: "29.69px" }}
           >
-            Hi
+            The current section is in progress! You can contact to us to know which technologies we use.
           </Section>
           <Section
             title="Projects"
