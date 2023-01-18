@@ -1,6 +1,5 @@
 import { Box, styled } from '@mui/material';
 import Paper from '@mui/material/Paper';
-import { Content } from './MainContent';
 
 interface SectionProps {
     children: any

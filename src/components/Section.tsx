@@ -1,4 +1,4 @@
-import { Box, styled, Theme } from "@mui/material";
+import { Box, Theme } from "@mui/material";
 
 import Card from "@mui/material/Card";
 import frameTitle from "../assets/frameTitle.svg";
@@ -16,13 +16,7 @@ interface SectionProps {
   theme: Theme;
 }
 
-interface ItemProps {
-  primary: boolean;
-  theme: Theme;
-  elevation: number;
-  square: boolean;
-  children: any;
-}
+
 
 export function Section(props: SectionProps) {
   return (

@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { selectPrimaryTitle } from "../features/counter/appReducer";
 import { useAppSelector } from "../app/hooks";
-import { Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 import environmental from "../assets/mainsection/environmental.png";
 import industrial from "../assets/mainsection/industrial.png";
 import space from "../assets/mainsection/space.png";
