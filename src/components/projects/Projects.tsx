@@ -1,12 +1,14 @@
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import projectsJson from "../../assets/data/projects.json";
-import { Grid } from "@mui/material";
+import { Grid, Link } from "@mui/material";
+import { FetchAPI } from "../api/CallbackFunction";
+import {useState, useEffect} from "react";
 
 interface ProjectItemProps {
   title: string;
   img: string;
   project: string;
+  link: string;
   children: any;
 }
 
@@ -15,6 +17,7 @@ function imageFrom(topic: string): string {
 }
 
 function ProjectItem(props: ProjectItemProps) {
+  console.log(props);
   return (
     <Card
       sx={{
@@ -40,6 +43,7 @@ function ProjectItem(props: ProjectItemProps) {
               pb: 2,
             }}
           >
+            <Link href={props.link}>
             <Box
               component="img"
               alt={imageFrom(props.project)}
@@ -48,6 +52,7 @@ function ProjectItem(props: ProjectItemProps) {
                 height: "100%"
               }}
             />
+            </Link>
           </Box>
         </Grid>
         <Grid item xs={12} md={8}>
@@ -61,14 +66,34 @@ function ProjectItem(props: ProjectItemProps) {
   );
 }
 
+interface Project {
+  topic: string;
+  img: string;
+  project: string;
+  description: string;
+  link: string;
+}
+
 export function Projects() {
+
+  
+  const [projects, setProjects] = useState<Project[]>();
+
+  useEffect(() => {
+    const fetchApi = FetchAPI(
+      "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/data/projects.json",
+        (obj) => {setProjects(obj);});
+    fetchApi();
+  }, []);
+
   return (
     <Box>
-      {projectsJson.map((project) => (
+      {!projects ? <div></div> : projects.map((project) => (
         <ProjectItem
           title={project.topic}
           img={project.img}
           project={project.project}
+          link={project.link}
         >
           <b>{project.project}</b>: {project.description}
         </ProjectItem>

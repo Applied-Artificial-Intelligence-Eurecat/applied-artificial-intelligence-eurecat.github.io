@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Techonology",
+        "items": [
+            "Machine Learning",
+            "Deep Learning",
+            "Edge Artificial Intelligence",
+            "Deep Reainforcement Learning",
+            "Computer Vision",
+            "Optimization",
+            "IoT",
+            "Semantics",
+            "Small & Big Data"
+        ],
+        "color":"#0ECC95"
+    },
+    {
+        "title": "Projects",
+        "items": [
+            "More than 100 project in execution during 2022",
+            "Ongoing 30 H2020/HE projects",
+            "Coordinating 4 H2020/HE:",
+            "Nebulous",
+            "Impetus",
+            "Frontier",
+            "Vitigeoss"
+        ],
+        "color": "#572A79"
+    },
+    {
+        "title": "People",
+        "items": [
+            "40 people",
+            "X Ph. D / Y Ph. D students",
+            "30 % of women",
+            "In 3 sites: Lleida, Barcelona, Cerdanyola"
+        ],
+        "color": "#2B59A2"
+    },
+    {
+        "title": "Solutions",
+        "items": [
+            "Decision support",
+            "Prescriptive management",
+            "Digital twins + what-if analysis",
+            "Autonomous agents"
+        ],
+        "color": "#A5A5A5"
+    }
+
+]
