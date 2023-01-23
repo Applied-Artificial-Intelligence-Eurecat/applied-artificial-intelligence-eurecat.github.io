@@ -47,3 +47,4 @@ jobs:
         with:
           tags: true
           branch: main
+          force: true
