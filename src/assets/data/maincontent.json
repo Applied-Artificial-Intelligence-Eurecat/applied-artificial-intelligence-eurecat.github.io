@@ -5,24 +5,28 @@
       {
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/environmental.png",
         "alt": "Image of environmental",
-        "title": "Environmental"
+        "title": "Environmental",
+        "width": "100%"
       },
       {
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/space.png",
         "alt": "Image of the space",
-        "title": "Space"
+        "title": "Space",
+        "width": "100%"
       }
     ],
     "bottom": [
       {
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/industrial.png",
         "alt": "Image of industrial",
-        "title": "Industrial"
+        "title": "Industrial",
+        "width": "100%"
       },
       {
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/water.png",
         "alt": "Image of water",
-        "title": "water"
+        "title": "water",
+        "width": "90%"
       }
     ]
   },

@@ -46,6 +46,7 @@ interface IntImageContent {
   src: string;
   alt: string;
   title: string;
+  width: string;
 }
 
 export function MainContent() {
@@ -105,19 +106,19 @@ export function MainContent() {
               alt={el.alt}
               src={el.src}
               sx={{
-                width: "100%",
+                width: el.width,
                 pb: 2,
               }}
             />)}
           </Grid>
           <Grid item xs={5}>
-          {!content ? <div/> : content.images.top.map((el) => <Box
+          {!content ? <div/> : content.images.bottom.map((el) => <Box
               component="img"
               alt={el.alt}
               key={el.alt}
               src={el.src}
               sx={{
-                width: "100%",
+                width: el.width,
                 pb: 2,
               }}
             />)}
