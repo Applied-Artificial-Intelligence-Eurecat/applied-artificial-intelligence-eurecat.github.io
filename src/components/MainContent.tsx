@@ -59,7 +59,7 @@ export function MainContent() {
         (obj) => {setContent(obj);});
     fetchApi();
   }, []);
-
+  console.log(content);
   return (
     <Content 
     id={"Intro"}
