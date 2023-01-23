@@ -40,8 +40,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git tag -d build
-          git tag build
+          git tag build -f
           git commit -a -m "Add changes"
       - name: Deploy 🚀
         uses: ad-m/github-push-action@master
