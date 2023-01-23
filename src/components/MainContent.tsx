@@ -9,11 +9,13 @@ import { FetchAPI } from "./api/CallbackFunction";
 
 interface ContentProps {
   children: any;
+  id: string;
 }
 
 export function Content(props: ContentProps) {
   return (
     <Box
+      id={props.id}
       sx={{
         px: {
           xs: 5,
@@ -58,7 +60,10 @@ export function MainContent() {
   }, []);
 
   return (
-    <Content>
+    <Content 
+    id={"Intro"}
+    
+    >
       <h1>{title}</h1>
       <Box
         sx={{
@@ -96,6 +101,7 @@ export function MainContent() {
           <Grid item xs={5}>
             {!content ? <div/> : content.images.top.map((el) => <Box
               component="img"
+              key={el.alt}
               alt={el.alt}
               src={el.src}
               sx={{
@@ -108,6 +114,7 @@ export function MainContent() {
           {!content ? <div/> : content.images.top.map((el) => <Box
               component="img"
               alt={el.alt}
+              key={el.alt}
               src={el.src}
               sx={{
                 width: "100%",

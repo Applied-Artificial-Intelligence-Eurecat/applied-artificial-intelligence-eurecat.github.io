@@ -67,6 +67,7 @@ function App() {
           </PrimarySection>
           <Section
             title="Technologies we use"
+            id="Technologies"
             primary={false}
             theme={theme}
             frameTitle={{ width: "200px", height: "30.69px" }}
@@ -75,6 +76,7 @@ function App() {
           </Section>
           <Section
             title="Projects"
+            id="Projects"
             primary={true}
             theme={theme}
             frameTitle={{ width: "170px", height: "29.59px" }}
@@ -83,6 +85,7 @@ function App() {
           </Section>
           <Section
             title="Our public work"
+            id="Demostrators"
             primary={false}
             theme={theme}
             frameTitle={{ width: "250px", height: "29.69px" }}
@@ -111,6 +114,7 @@ function App() {
           </Section>
           <Section
             title="The team"
+            id="Team"
             primary={true}
             theme={theme}
             frameTitle={{ width: "180px", height: "29.69px" }}
@@ -119,6 +123,7 @@ function App() {
           </Section>
           <Section
             title="List of publications"
+            id="Publications"
             primary={false}
             theme={theme}
             frameTitle={{ width: "250px", height: "29.69px" }}

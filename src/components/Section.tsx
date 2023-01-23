@@ -10,6 +10,7 @@ interface FrameProps {
 
 interface SectionProps {
   title: string;
+  id: string;
   frameTitle: FrameProps;
   primary: boolean;
   children: any;
@@ -21,6 +22,7 @@ interface SectionProps {
 export function Section(props: SectionProps) {
   return (
     <Card
+      id={props.id}
       variant="outlined"
       sx={{
         borderRadius: 0,

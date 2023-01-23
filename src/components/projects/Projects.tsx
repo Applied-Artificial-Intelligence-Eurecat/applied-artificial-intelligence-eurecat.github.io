@@ -89,6 +89,7 @@ export function Projects() {
     <Box>
       {!projects ? <div></div> : projects.map((project) => (
         <ProjectItem
+        key={project.topic}
           title={project.topic}
           img={project.img}
           project={project.project}

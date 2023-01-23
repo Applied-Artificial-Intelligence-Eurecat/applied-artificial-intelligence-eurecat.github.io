@@ -30,12 +30,12 @@ export function Publications() {
         <div></div>
       ) : (
         publications.map((yearMap) => (
-          <div>
+          <Box key={yearMap.year}>
             <h3>{yearMap.year}</h3>
             {yearMap.publications.map((publication) => (
-              <p>{publication}</p>
+              <p key={yearMap.year + yearMap.publications.indexOf(publication)}>{publication}</p>
             ))}
-          </div>
+          </Box>
         ))
       )}
     </Box>
