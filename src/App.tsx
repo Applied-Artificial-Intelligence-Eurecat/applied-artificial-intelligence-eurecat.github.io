@@ -65,31 +65,6 @@ function App() {
           }}
         >
           <PrimarySection>
-            <Box
-              sx={{
-                px: 2,
-              }}
-            >
-              <Grid container>
-                <Grid item xs={0} lg={4}></Grid>
-                <Grid item xs={12} lg={4}>
-                  <Box
-                    component="img"
-                    sx={{
-                      width: {
-                        xs: "95%",
-                        sm: "70%",
-                        md: "50%",
-                        lg: "95%",
-                      },
-                    }}
-                    src={eurecatLogo}
-                  />
-                </Grid>
-                <Grid item xs={0} lg={4}></Grid>
-              </Grid>
-            </Box>
-
             <MainContent />
           </PrimarySection>
           <Section

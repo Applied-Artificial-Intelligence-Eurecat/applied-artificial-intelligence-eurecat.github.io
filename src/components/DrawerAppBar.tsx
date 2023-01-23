@@ -10,13 +10,20 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Grid } from "@mui/material";
-import eurecatLogo from '../assets/logo.png'
+import eurecatLogo from "../assets/logo.png";
 
-const pages = ["Intro", "Technologies", "Projects", 'Demostrators', 'Team', 'Publications'];
+const pages = [
+  "Intro",
+  "Technologies",
+  "Projects",
+  "Demostrators",
+  "Team",
+  "Publications",
+];
 
 export function DrawerAppBar() {
-  const title = 'Applied Artificial Intelligence'
-  const title_sm = 'AAI'
+  const title = "Applied Artificial Intelligence";
+  const title_sm = "AAI";
 
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -34,7 +41,7 @@ export function DrawerAppBar() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar variant="dense">
-        <Typography
+          <Typography
             noWrap
             component="a"
             href="/"
@@ -47,27 +54,45 @@ export function DrawerAppBar() {
               textDecoration: "none",
             }}
           >
-          <Grid container spacing={1}
-          justifyContent="space-evenly"
-          alignItems="center">
-            <Grid item lg={12} style={{
-              textAlign: 'center'
-            }}>
-            <Box component="img" style={{
-              width: '140px',
-
-            }} src={eurecatLogo}/>
+            <Grid
+              container
+              spacing={1}
+              justifyContent="space-evenly"
+              alignItems="center"
+            >
+              <Grid
+                item
+                lg={12}
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                {title}
+              </Grid>
+              <Grid
+                item
+                lg={12}
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <Box
+                  component="img"
+                  style={{
+                    width: "140px",
+                  }}
+                  src={eurecatLogo}
+                />
+              </Grid>
             </Grid>
-            <Grid item lg={12} style={{
-              textAlign: 'center'
-            }}>
-          
-            {title}
-          </Grid>
-          </Grid>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex", lg: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "flex", lg: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -103,7 +128,16 @@ export function DrawerAppBar() {
               ))}
             </Menu>
           </Box>
-          <Box component="img" sx={{ display: { xs: "flex", md: "flex", lg: "none" }, mr: 3, my: 2, width: '120px' }} src={eurecatLogo}/>
+          <Box
+            component="img"
+            sx={{
+              display: { xs: "flex", md: "flex", lg: "none" },
+              mr: 3,
+              my: 2,
+              width: "120px",
+            }}
+            src={eurecatLogo}
+          />
           <Typography
             variant="h5"
             noWrap
@@ -119,9 +153,14 @@ export function DrawerAppBar() {
               textDecoration: "none",
             }}
           >
-           - {title_sm}
+            - {title_sm}
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "none", lg: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "none", lg: "flex" },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}

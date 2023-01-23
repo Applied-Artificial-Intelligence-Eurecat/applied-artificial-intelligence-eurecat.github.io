@@ -7,6 +7,8 @@ import environmental from "../assets/mainsection/environmental.png";
 import industrial from "../assets/mainsection/industrial.png";
 import space from "../assets/mainsection/space.png";
 import water from "../assets/mainsection/water.png";
+import eurecatLogo from "../assets/logo.png";
+
 
 interface ContentProps {
   children: any;
@@ -36,7 +38,30 @@ export function MainContent() {
   return (
     <Content>
       <h1>{title}</h1>
-
+      <Box
+        sx={{
+          px: 2,
+        }}
+      >
+        <Grid container>
+          <Grid item xs={0} lg={3}></Grid>
+          <Grid item xs={12} lg={6}>
+            <Box
+              component="img"
+              sx={{
+                width: {
+                  xs: "95%",
+                  sm: "70%",
+                  md: "50%",
+                  lg: "95%",
+                },
+              }}
+              src={eurecatLogo}
+            />
+          </Grid>
+          <Grid item xs={0} lg={3}></Grid>
+        </Grid>
+      </Box>
       <Box>
         Eurecat's Applied Artificial Intelligence Unit develops innovative
         solutions (algorithms, methods, platforms) based on the combination of
@@ -51,48 +76,47 @@ export function MainContent() {
           pt: 5,
         }}
       >
-        
-          <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={4}>
-              <Box
-                component="img"
-                alt="Image of environmental"
-                src={environmental}
-                sx={{
-                  width: "100%",
-                  pb: 2,
-                }}
-              />
-              <Box
-                component="img"
-                alt="Image of space"
-                src={space}
-                sx={{
-                  width: "100%",
-                }}
-              />
-            </Grid>
-            <Grid item xs={4}>
-              <Box
-                component="img"
-                alt="Image of industrial"
-                src={industrial}
-                sx={{
-                  width: "100%",
-                  pb: 2,
-                }}
-              />
-              <Box
-                component="img"
-                alt="Image of water"
-                src={water}
-                sx={{
-                  width: "100%",
-                  height: "45%",
-                }}
-              />
-            </Grid>
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item xs={5}>
+            <Box
+              component="img"
+              alt="Image of environmental"
+              src={environmental}
+              sx={{
+                width: "100%",
+                pb: 2,
+              }}
+            />
+            <Box
+              component="img"
+              alt="Image of space"
+              src={space}
+              sx={{
+                width: "100%",
+              }}
+            />
           </Grid>
+          <Grid item xs={5}>
+            <Box
+              component="img"
+              alt="Image of industrial"
+              src={industrial}
+              sx={{
+                width: "100%",
+                pb: 2,
+              }}
+            />
+            <Box
+              component="img"
+              alt="Image of water"
+              src={water}
+              sx={{
+                width: "100%",
+                height: "45%",
+              }}
+            />
+          </Grid>
+        </Grid>
       </Box>
       <Box
         sx={{

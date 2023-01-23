@@ -43,7 +43,7 @@ jobs:
           git tag build -f
           git add build/
           git commit -m "Add changes"
-      - name: Commit build 🚀
+      - name: Push build 🚀
         uses: ad-m/github-push-action@master
         with:
           tags: true

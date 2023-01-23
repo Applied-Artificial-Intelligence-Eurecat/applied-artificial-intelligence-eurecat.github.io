@@ -49,7 +49,7 @@ function ProjectItem(props: ProjectItemProps) {
               alt={imageFrom(props.project)}
               src={props.img}
               sx={{
-                height: "100%"
+                height: "100%",
               }}
             />
             </Link>
