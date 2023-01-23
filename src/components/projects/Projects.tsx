@@ -17,7 +17,6 @@ function imageFrom(topic: string): string {
 }
 
 function ProjectItem(props: ProjectItemProps) {
-  console.log(props);
   return (
     <Card
       sx={{

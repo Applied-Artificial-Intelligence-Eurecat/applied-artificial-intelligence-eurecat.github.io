@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Grid } from "@mui/material";
 import eurecatLogo from "../assets/logo.png";
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 const pages = [
   "Intro",
@@ -36,6 +37,17 @@ export function DrawerAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const handleClickScroll = (name: string) => () => {
+
+    const list: HTMLCollection = document.getElementsByTagName('h2');
+    console.log(list);
+    for (let element in list) {
+      console.log(element);
+      if (element === name) {
+      }
+    }
+  }
 
   return (
     <AppBar position="fixed">
@@ -122,7 +134,7 @@ export function DrawerAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleClickScroll(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}

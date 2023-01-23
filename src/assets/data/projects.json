@@ -26,5 +26,12 @@
         "project": "SCOREWATER",
         "description": "To improve urban management of wastewater, stormwater and flooding events by introducing novel digital services in an adaptive interoperable open-source platform for smart water management.",
         "link": "https://scorewater.eu/"
+    },
+    {
+        "topic": "Energy",
+        "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/scorewater.PNG",
+        "project": "Greencharge",
+        "description": "Sustainable mobility with innovative business models, technologies and guidelines for cost efficient and succesful deployment and operation of charging infrastructure for EVs.",
+        "link": "https://www.greencharge2020.eu/"
     }
 ]

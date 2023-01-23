@@ -1,13 +1,10 @@
 import { Box } from "@mui/system";
-import React from "react";
+import {useEffect, useState} from "react";
 import { selectPrimaryTitle } from "../features/counter/appReducer";
 import { useAppSelector } from "../app/hooks";
 import { Grid } from "@mui/material";
-import environmental from "../assets/mainsection/environmental.png";
-import industrial from "../assets/mainsection/industrial.png";
-import space from "../assets/mainsection/space.png";
-import water from "../assets/mainsection/water.png";
 import eurecatLogo from "../assets/logo.png";
+import { FetchAPI } from "./api/CallbackFunction";
 
 
 interface ContentProps {
@@ -32,8 +29,33 @@ export function Content(props: ContentProps) {
   );
 }
 
+interface IntContent {
+  p1: string;
+  images: IntImagesContent;
+  p2: string;
+}
+
+interface IntImagesContent {
+  top: IntImageContent[];
+  bottom: IntImageContent[];
+}
+
+interface IntImageContent {
+  src: string;
+  alt: string;
+  title: string;
+}
+
 export function MainContent() {
   const title = useAppSelector(selectPrimaryTitle);
+  const [content, setContent] = useState<IntContent>();
+
+  useEffect(() => {
+    const fetchApi = FetchAPI(
+      "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/data/maincontent.json",
+        (obj) => {setContent(obj);});
+    fetchApi();
+  }, []);
 
   return (
     <Content>
@@ -63,13 +85,7 @@ export function MainContent() {
         </Grid>
       </Box>
       <Box>
-        Eurecat's Applied Artificial Intelligence Unit develops innovative
-        solutions (algorithms, methods, platforms) based on the combination of
-        artificial intelligence and knowledge management technologies for
-        variety of sectors. Even our strong focus is on industrial
-        manufacturing, energy and water resources, our projects are spread in
-        many other fields as construction, agrifood, environmental and climate
-        change.
+        {!content ? <div/> : content.p1}
       </Box>
       <Box
         sx={{
@@ -78,43 +94,27 @@ export function MainContent() {
       >
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={5}>
-            <Box
+            {!content ? <div/> : content.images.top.map((el) => <Box
               component="img"
-              alt="Image of environmental"
-              src={environmental}
+              alt={el.alt}
+              src={el.src}
               sx={{
                 width: "100%",
                 pb: 2,
               }}
-            />
-            <Box
-              component="img"
-              alt="Image of space"
-              src={space}
-              sx={{
-                width: "100%",
-              }}
-            />
+            />)}
           </Grid>
           <Grid item xs={5}>
-            <Box
+          {!content ? <div/> : content.images.top.map((el) => <Box
               component="img"
-              alt="Image of industrial"
-              src={industrial}
+              alt={el.alt}
+              src={el.src}
               sx={{
                 width: "100%",
                 pb: 2,
               }}
-            />
-            <Box
-              component="img"
-              alt="Image of water"
-              src={water}
-              sx={{
-                width: "100%",
-                height: "45%",
-              }}
-            />
+            />)}
+           
           </Grid>
         </Grid>
       </Box>
@@ -123,12 +123,7 @@ export function MainContent() {
           py: 3,
         }}
       >
-        We have a broad experience in interoperability, normalization, and
-        homogenization of the raw data, transforming it in fruitful and useful
-        knowledge. We make used of hybrid architectures that fit the specific
-        needs of our clients and projects (big data, IoT, semantics, insight
-        platforms) and develop data-based IA models that tackle the real needs
-        of the end users.
+        {!content ? <div/> : content.p2}
       </Box>
     </Content>
   );

@@ -6,10 +6,8 @@ import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Link from "@mui/material/Link";
 import { Publications } from "./components/publications/Publications";
 import { Team } from "./components/team/Team";
-import Grid from "@mui/material/Grid";
 import { Projects } from "./components/projects/Projects";
 import "./App.css";
-import eurecatLogo from "./assets/logo.png";
 import githubLogo from "./assets/githubLogo.png";
 
 import { Section } from "./components/Section";

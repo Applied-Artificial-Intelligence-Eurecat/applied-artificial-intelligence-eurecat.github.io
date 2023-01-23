@@ -1,0 +1,30 @@
+{
+  "p1": "Eurecat's Applied Artificial Intelligence Unit develops innovative solutions (algorithms, methods, platforms) based on the combination of artificial intelligence and knowledge management technologies for variety of sectors. Even our strong focus is on industrial manufacturing, energy and water resources, our projects are spread in many other fields as construction, agrifood, environmental and climate change.",
+  "images": {
+    "top": [
+      {
+        "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/environmental.png",
+        "alt": "Image of environmental",
+        "title": "Environmental"
+      },
+      {
+        "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/space.png",
+        "alt": "Image of the space",
+        "title": "Space"
+      }
+    ],
+    "bottom": [
+      {
+        "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/industrial.png",
+        "alt": "Image of industrial",
+        "title": "Industrial"
+      },
+      {
+        "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/water.png",
+        "alt": "Image of water",
+        "title": "water"
+      }
+    ]
+  },
+  "p2": "We have a broad experience in interoperability, normalization, and homogenization of the raw data, transforming it in fruitful and useful knowledge. We make used of hybrid architectures that fit the specific needs of our clients and projects (big data, IoT, semantics, insight platforms) and develop data-based IA models that tackle the real needs of the end users."
+}
