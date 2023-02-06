@@ -7,6 +7,7 @@ import Link from "@mui/material/Link";
 import { Publications } from "./components/publications/Publications";
 import { Team } from "./components/team/Team";
 import { Projects } from "./components/projects/Projects";
+import { Blocks } from "./components/blocks/Blocks";
 import "./App.css";
 import githubLogo from "./assets/githubLogo.png";
 
@@ -66,13 +67,12 @@ function App() {
             <MainContent />
           </PrimarySection>
           <Section
-            title="Technologies we use"
-            id="Technologies"
+            id="Blocks"
             primary={false}
             theme={theme}
             frameTitle={{ width: "200px", height: "30.69px" }}
           >
-            The current section is in progress! You can contact to us to know which technologies we use.
+            <Blocks/>
           </Section>
           <Section
             title="Projects"

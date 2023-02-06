@@ -9,15 +9,13 @@ interface FrameProps {
 }
 
 interface SectionProps {
-  title: string;
+  title?: string;
   id: string;
   frameTitle: FrameProps;
   primary: boolean;
   children: any;
   theme: Theme;
 }
-
-
 
 export function Section(props: SectionProps) {
   return (
@@ -48,33 +46,34 @@ export function Section(props: SectionProps) {
           pb: 10,
         }}
       >
-        <Box
-        alignItems="left"
-
-        >
-        <Box
-        alignItems="left"
-          component="img"
-          style={{
-            display: "flex",
-            width: props.frameTitle.width,
-            height: props.frameTitle.height,
-            marginTop: "40px",
-            marginLeft: "0px",
-            zIndex: "-1",
-          }}
-          src={frameTitle}
-        />
-        </Box>
-        <Box
-          sx={{
-            mt: "-80px",
-            pl: "10px",
-            pb: "20px",
-          }}
-        >
-          <h2>{props.title}</h2>
-        </Box>
+        {!props.title ? (
+          <div></div>
+        ) : (
+          <Box alignItems="left">
+            <Box
+              alignItems="left"
+              component="img"
+              style={{
+                display: "flex",
+                width: props.frameTitle.width,
+                height: props.frameTitle.height,
+                marginTop: "40px",
+                marginLeft: "0px",
+                zIndex: "-1",
+              }}
+              src={frameTitle}
+            />
+            <Box
+              sx={{
+                mt: "-80px",
+                pl: "10px",
+                pb: "20px",
+              }}
+            >
+              <h2>{props.title}</h2>
+            </Box>
+          </Box>
+        )}
         <Box
           sx={{
             px: "3%",

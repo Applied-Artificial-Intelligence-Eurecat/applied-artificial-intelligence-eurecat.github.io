@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+bookmarkRibbon {
+  border:       30px solid blue;
+  border-left:  0;              
+  border-right: 20px solid transparent;
+  width:        100px;                 
+}

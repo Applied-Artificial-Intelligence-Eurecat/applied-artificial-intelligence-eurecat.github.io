@@ -12,7 +12,8 @@
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/space.png",
         "alt": "Image of the space",
         "title": "Space",
-        "width": "100%"
+        "width": "100%",
+        "height": "44.5%"
       }
     ],
     "bottom": [
@@ -26,7 +27,8 @@
         "src": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/mainsection/water.png",
         "alt": "Image of water",
         "title": "water",
-        "width": "90%"
+        "width": "100%",
+        "height": "44.5%"
       }
     ]
   },

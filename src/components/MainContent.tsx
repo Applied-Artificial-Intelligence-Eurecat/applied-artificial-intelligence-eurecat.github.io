@@ -99,7 +99,7 @@ export function MainContent() {
         }}
       >
         <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={5}>
+          <Grid item xs={6}>
             {!content ? <div/> : content.images.top.map((el) => <Box
               component="img"
               key={el.alt}
@@ -111,7 +111,7 @@ export function MainContent() {
               }}
             />)}
           </Grid>
-          <Grid item xs={5}>
+          <Grid item xs={6}>
           {!content ? <div/> : content.images.bottom.map((el) => <Box
               component="img"
               alt={el.alt}
