@@ -12,9 +12,3 @@ code {
     monospace;
 }
 
-bookmarkRibbon {
-  border:       30px solid blue;
-  border-left:  0;              
-  border-right: 20px solid transparent;
-  width:        100px;                 
-}

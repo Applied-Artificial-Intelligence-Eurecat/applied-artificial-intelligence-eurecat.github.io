@@ -14,7 +14,6 @@ import eurecatLogo from "../assets/logo.png";
 
 const pages = [
   "Intro",
-  "Technologies",
   "Projects",
   "Demostrators",
   "Team",
