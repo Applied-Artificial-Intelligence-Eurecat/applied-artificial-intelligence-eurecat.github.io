@@ -1,5 +1,11 @@
 [
   {
+    "year": "2023",
+    "publications": [
+      "Velasquez-Camacho L, Otero M, Basile B, Pijuan J, Corrado G. Current Trends and Perspectives on Predictive Models for Mildew Diseases in Vineyards. Microorganisms. 2023; 11(1):73. https://doi.org/10.3390/microorganisms11010073"
+    ]
+  },
+  {
     "year": "2022",
     "publications": [
       "Nievas, N., Bonada, F., Echeverria, L., Abio, A., Lange, D., & Pujante, J. (2022). A Reinforcement Learning Control in Hot Stamping for Cycle Time Optimization. Materials, 15(14), 4825",
@@ -8,7 +14,7 @@
       "Aznar, B., Grima, J., Torret, X., Medina, V., Varela, J., Chesa, M. J., ... & Corchero, A. (2022, June). Applying Real-time Advanced Urban Management to ensure Bathing Water Quality in Barcelona. In Proceedings of the 39th IAHR World Congress (Vol. 19, p. 24).",
       "Abio, A., Bonada, F., Pujante, J., Grané, M., Nievas, N., Lange, D., & Pujol, O. (2022). Machine Learning-Based Surrogate Model for Press Hardening Process of 22MnB5 Sheet Steel Simulation in Industry 4.0. Materials, 15(10), 3647.",
       "Ribalta, M., Bejar, R., Mateu, C., Rubión, E. (2022). Machine learning solutions in sewer systems: a bibliometric analysis, Urban Water Journal, DOI: 10.1080/1573062X.2022.2138460"
-    ]
+     ]
   },
   {
     "year": "2021",
