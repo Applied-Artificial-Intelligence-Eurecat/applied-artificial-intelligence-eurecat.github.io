@@ -121,6 +121,7 @@ export function MainContent() {
               src={el.src}
               sx={{
                 width: el.width,
+                height: el.height,
                 pb: 2,
               }}
             />)}
