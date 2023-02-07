@@ -47,6 +47,7 @@ interface IntImageContent {
   alt: string;
   title: string;
   width: string;
+  height: string;
 }
 
 export function MainContent() {
@@ -107,6 +108,7 @@ export function MainContent() {
               src={el.src}
               sx={{
                 width: el.width,
+                height: el.height,
                 pb: 2,
               }}
             />)}
