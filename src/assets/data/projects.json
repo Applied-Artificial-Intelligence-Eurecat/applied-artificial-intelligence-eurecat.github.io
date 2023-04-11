@@ -3,7 +3,7 @@
         "topic": "Industrial",
         "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/masats.PNG",
         "project": "MASATS",
-        "description": "Exploitation of the operation data of vehicle doors using AI to monitor operation and identify abnormal behaviors. Implementation of predictive maintenance strategies that allow detecting and anticipating equipment failure. Increased availability of equipment, improved maintenance workforce management.",
+        "description": "Masats is a leading company in developing and manufacturing pneumatic and electric doors, ramps, and access platforms for passenger vehicles of all types. AAI implemented predictive maintenance strategies that detect and anticipate equipment failure, increase availability, and improve the maintenance workforce. These strategies are based on the exploitation of the operation data of vehicles using AI to monitor and identify abnormal behaviours.",
         "link": "https://www.masats.es/"
     },
     {
