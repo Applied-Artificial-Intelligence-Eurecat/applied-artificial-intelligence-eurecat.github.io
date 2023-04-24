@@ -12,6 +12,7 @@ import "./App.css";
 import githubLogo from "./assets/githubLogo.png";
 
 import { Section } from "./components/Section";
+import {CarouselExample} from "./components/demostrators/Carrousel";
 
 declare module "@mui/material/styles" {
   interface Theme {
@@ -91,7 +92,11 @@ function App() {
             frameTitle={{ width: "250px", height: "29.69px" }}
           >
             <Box component="div" sx={{ mt: 3 }}>
-              Currently, we do not have demonstrators, but check our
+            <CarouselExample
+              theme={theme}
+            />
+            
+              Check our
               <Link
                 href="https://github.com/Applied-Artificial-Intelligence-Eurecat"
                 underline="hover"

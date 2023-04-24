@@ -85,10 +85,10 @@ export function Blocks() {
     <Box>
       <Grid container alignItems="stretch" spacing={6}>
         {!blocks ? (
-          <div></div>
+          <Grid item></Grid>
         ) : (
           blocks.map((block) => (
-            <Grid item lg={6} xs={12}>
+            <Grid item lg={6} xs={12} alignItems="stretch">
               <BlockItem
                 title={block.title}
                 items={block.items}
