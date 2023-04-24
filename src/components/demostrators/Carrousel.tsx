@@ -32,7 +32,6 @@ interface ItemInstance {
 }
 
 interface CarouselWidthProps {
-  items: ItemInstance[];
   theme: Theme;
 }
 
@@ -41,36 +40,29 @@ interface DemostratorProps {
 } 
 
 export function CarouselExample(props: DemostratorProps) {
-
-  const [items, setItems] = useState<ItemInstance[]>([]);
-
-  useEffect(() => {
-    const fetchApi = FetchAPI(
-      "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/data/blocks.json",
-      (obj) => {
-        setItems(obj);
-      }
-    );
-    fetchApi();
-  }, []);
-
-  return (<CarouselWidthChanger items={items} theme={props.theme}/>);
+  return (<CarouselWidthChanger theme={props.theme}/>);
 }
 
 
 export function CarouselWidthChanger(props: CarouselWidthProps) {
 
   const setWindowWidth = useState(window.innerWidth)[1];
-  const [mappedItems, setMappedItems] = useState<ItemInstance[][]>(groupItems(props.items));
   const [divisor, setDivisor] = useState<number>(getDivider());
+  const [items, setItems] = useState<ItemInstance[]>([]);
 
   useEffect(() => {
+    const fetchApi = FetchAPI(
+      "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/data/demostrators.json",
+      (obj) => {
+        setItems(obj);
+      }
+    );
+    fetchApi();
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      
-      const mappedItems = groupItems(props.items);
-      setMappedItems(mappedItems);
       setDivisor(getDivider());
+
     };
 
     window.addEventListener('resize', handleResize);
@@ -95,8 +87,8 @@ export function CarouselWidthChanger(props: CarouselWidthProps) {
         animation="slide"
         swipe={false}
       >
-        {mappedItems.map((items, i) => (
-          <LineItemDemostrator divisor={divisor} items={items} theme={props.theme} />
+        {groupItems(items).map((groupItem, i) => (
+          <LineItemDemostrator divisor={divisor} items={groupItem} theme={props.theme} />
         ))}
       </Carousel>
     </Box>
