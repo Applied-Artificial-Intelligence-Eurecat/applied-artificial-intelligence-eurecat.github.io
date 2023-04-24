@@ -10,6 +10,7 @@ import {
   CardContent,
   Typography,
   Link,
+  Alert,
 } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
@@ -29,6 +30,7 @@ interface ItemInstance {
   img: string;
   link: string;
   subtitle: string;
+  credentials?: boolean;
   description: string;
   longdescription: string[];
 }
@@ -203,6 +205,7 @@ function CardDemostrador(props: ItemProp) {
                 target="_blank"
                 sx={{ marginLeft: "5px" }}
               >You can see the demonstrator by clicking here.</Link>
+            {props.item.credentials ? <Alert severity="warning">This demostrator requires credentials to know its usage basis. Contact for more information</Alert> : <p></p>}
           </Grid>
         </Box>
       </Modal>
