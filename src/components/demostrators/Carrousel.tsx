@@ -199,13 +199,34 @@ function CardDemostrador(props: ItemProp) {
             {props.item.longdescription.map((paragraph) => (
               <p>{paragraph}</p>
             ))}
-            <Link
+            <Grid item xs={12}>
+              <Link
                 href={props.item.link}
                 underline="hover"
                 target="_blank"
-                sx={{ marginLeft: "5px" }}
-              >You can see the demonstrator by clicking here.</Link>
-            {props.item.credentials ? <Alert severity="warning">This demostrator requires credentials to know its usage basis. Contact for more information</Alert> : <p></p>}
+                sx={{ marginLeft: "5px", mb: "1", pb: "3" }}
+              >
+                You can see the demonstrator by clicking here.
+              </Link>
+            </Grid>
+            <Grid item xs={12}><p></p> </Grid>
+            <Grid item xs={12}>
+              {props.item.credentials ? (
+                <Alert severity="warning" sx={{mt: "4"}}>
+                  This demostrator requires credentials to get its usage basis.{" "}
+                  <Link
+                    target="_top"
+                underline="hover"
+                    rel="noopener noreferrer"
+                    href="maddi.etxegarai@eurecat.org"
+                  >
+                    Contact for more information
+                  </Link>
+                </Alert>
+              ) : (
+                <p></p>
+              )}
+            </Grid>
           </Grid>
         </Box>
       </Modal>
