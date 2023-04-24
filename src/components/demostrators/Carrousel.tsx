@@ -28,7 +28,7 @@ interface ItemInstance {
   img: string;
   subtitle: string;
   description: string;
-  longdescription: string;
+  longdescription: string[];
 }
 
 interface CarouselWidthProps {
@@ -173,7 +173,7 @@ function CardDemostrador(props: ItemProp) {
               <Modal open={open} onClose={handleClose}>
                 <Box sx={{ ...style }}>
                   <h2>{props.item.title}</h2>
-                  <p>{props.item.longdescription}</p>
+                  {props.item.longdescription.map((paragraph) => (<p>{paragraph}</p>))}
                 </Box>
               </Modal>
     </Paper>
