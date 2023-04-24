@@ -215,10 +215,9 @@ function CardDemostrador(props: ItemProp) {
                 <Alert severity="warning" sx={{mt: "4"}}>
                   This demostrator requires credentials to get its usage basis.{" "}
                   <Link
-                    target="_top"
+                  target="blank_"
                 underline="hover"
-                    rel="noopener noreferrer"
-                    href="maddi.etxegarai@eurecat.org"
+                    href="mailto:maddi.etxegarai@eurecat.org"
                   >
                     Contact for more information
                   </Link>
