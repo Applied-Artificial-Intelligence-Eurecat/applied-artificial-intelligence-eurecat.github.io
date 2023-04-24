@@ -1,6 +1,7 @@
 import { Box, Theme } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
+import { FetchAPI } from "../api/CallbackFunction";
 import {
   Paper,
   Grid,
@@ -40,17 +41,19 @@ interface DemostratorProps {
 } 
 
 export function CarouselExample(props: DemostratorProps) {
-  const items: ItemInstance[] = [
-    {
-      title: "DIGITS",
-      img: "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/sesame.PNG",
-      subtitle: "DIGITAL TWIN OF THE ALUMINUM DIE CASTING PROCESS ",
-      description:
-        "This platform hosts a Digital Twin of the aluminium die casting process as part of PRIV's DIGITS project, funded by ACCIÓ.",
-      longdescription:
-        "This platform hosts a Digital Twin of the aluminium die casting process as part of PRIV's DIGITS project, funded by ACCIÓ.\nfFDSAfdasfjs\nfdasf",
-    },
-  ];
+
+  const [items, setItems] = useState<ItemInstance[]>([]);
+
+  useEffect(() => {
+    const fetchApi = FetchAPI(
+      "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/data/blocks.json",
+      (obj) => {
+        setItems(obj);
+      }
+    );
+    fetchApi();
+  }, []);
+
   return (<CarouselWidthChanger items={items} theme={props.theme}/>);
 }
 
