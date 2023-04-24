@@ -2,8 +2,9 @@
     "title": "DIGITS",
     "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/demostrators/digits.PNG",
     "subtitle": "DIGITAL TWIN OF THE ALUMINUM DIE CASTING PROCESS ",
+    "link": "http://digitsapp.site/",
     "description":
-      "This platform hosts a Digital Twin of the aluminium die casting process as part of PRIV's DIGITS project, funded by ACCIÓ.",
+      "This demonstrator is a platform that hosts a digital twin of the aluminium die casting process as part of the PIRV project DIGITS.",
     "longdescription":
     [
         "This platform hosts a Digital Twin of the aluminium die casting process as part of PRIV's DIGITS project, funded by ACCIÓ. DT is a digital mirror of a physical system created from real data, including algorithms and decision-making.",
