@@ -3,14 +3,14 @@
         "topic": "Industrial",
         "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/masats.PNG",
         "project": "MASATS",
-        "description": "Exploitation of the operation data of vehicle doors using AI to monitor operation and identify abnormal behaviors. Implementation of predictive maintenance strategies that allow detecting and anticipating equipment failure. Increased    availability of equipment.",
+        "description": "is a leading company in developing and manufacturing pneumatic and electric doors, ramps, and access platforms for passenger vehicles of all types. AAI implemented predictive maintenance strategies that detect and anticipate equipment failure, increase availability, and improve the maintenance workforce. These strategies are based on the exploitation of the operation data of vehicles using AI to monitor and identify abnormal behaviours.",
         "link": "https://www.masats.es/"
     },
     {
         "topic": "Space",
         "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/sesame.PNG",
         "project": "SESAME",
-        "description": "Smart European Space Access through Modern Exploitation of data science. Demonstrate the ability of European space companies to work together and reduce costs using data science for predictive quality, predictive maintenance and supply chain agility.",
+        "description": "Smart European Space Access through Modern Exploitation of data science, is an operational research consortium financed under the Horizon 2020 program. This project aims to provide the European launcher industry with Artificial Intelligence solutions to reduce manufacturing costs and optimize production. AAI developed a Quality Hybrid Expert System that provides process quality prediction and assessment to the field expert based on Machine Learning algorithms. The predictive tools were implemented in an agile, open platform integrating the results and management layer visualization.",
         "link": "https://sesame-space.eu/"
     },
     {

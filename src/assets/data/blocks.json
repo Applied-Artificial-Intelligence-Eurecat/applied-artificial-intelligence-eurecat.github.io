@@ -1,5 +1,15 @@
 [
     {
+        "title": "Solutions",
+        "items": [
+            "Decision support models based on predictive and prescriptive AI technologies",
+            "Resource optimisation, planning and sequencing systems",
+            "Digital twins and what-if scenario analysis",
+            "Optimal autonomous control"
+        ],
+        "color": "#A5A5A5"
+    },
+    {
         "title": "Techonology",
         "items": [
             "Machine Learning",
@@ -31,21 +41,10 @@
         "title": "People",
         "items": [
             "40 people",
-            "7 Ph. D / 5 Ph. D students",
+            "8 Ph. D / 5 Ph. D students",
             "30 % of women",
             "In 3 sites: Lleida, Barcelona, Cerdanyola"
         ],
         "color": "#2B59A2"
-    },
-    {
-        "title": "Solutions",
-        "items": [
-            "Decision support",
-            "Prescriptive management",
-            "Digital twins + what-if analysis",
-            "Autonomous agents"
-        ],
-        "color": "#A5A5A5"
     }
-
 ]

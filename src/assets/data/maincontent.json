@@ -1,5 +1,5 @@
 {
-  "p1": "Eurecat's Applied Artificial Intelligence Unit develops innovative solutions (algorithms, methods, platforms) based on the combination of artificial intelligence and knowledge management technologies for variety of sectors. Even our strong focus is on industrial manufacturing, energy and water resources, our projects are spread in many other fields as construction, agrifood, environmental and climate change.",
+  "p1": "Eurecat's Applied Artificial Intelligence Unit develops innovative solutions (algorithms, methods, platforms) based on the combination of artificial intelligence and knowledge management technologies for variety of sectors. Although our strong focus is on industrial manufacturing, and energy and water resources, our projects are spread in many other fields such as aerospace industry, environmental and climate change, agri-food and agri-food industry, logistics and railway, or construction.",
   "images": {
     "top": [
       {
@@ -34,5 +34,5 @@
       }
     ]
   },
-  "p2": "We have a broad experience in interoperability, normalization, and homogenization of the raw data, transforming it in fruitful and useful knowledge. We make used of hybrid architectures that fit the specific needs of our clients and projects (big data, IoT, semantics, insight platforms) and develop data-based IA models that tackle the real needs of the end users."
+  "p2": "We have a broad experience in interoperability, normalization, and homogenization of raw data, transforming it in fruitful and useful knowledge with data and AI-driven approaches. We make used of hybrid architectures tailored to the specific needs of our clients and projects (small/BIG data, IoT, insight platforms) and develop data-based AI models aimed at overcoming real-world challenges and needs of our society."
 }
