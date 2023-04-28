@@ -11,6 +11,7 @@
         "The current platform captures the experimental data from the laboratory where the experiment occurs in quasi-real time. The information is sent automatically to the platform when each sample is finished (60 s approx.). Once in the platform, an AI algorithm detects if there is any anomaly in the data captured by the sensors during the injection process, and the quality of the sample is also estimated.",
         "If an anomaly is detected, an email is sent to the operator working in the laboratory, and a pop-up window appears to inform the user that something is wrong. It also allows for a simulation to observe in 3D the temperature and pressure evolution as a function of time during the injection process with the configuration parameters corresponding to the abnormal data. Also, the platform is suited with a virtual sensor for the temperature of the sample, allowing to determine this curve from the pressure measurement and giving the option to avoid the integration of temperature sensors for future samples, as each matrix for different parts requires the installation of a sensor."
     ],
-    "credentials": "true"
+    "credentials": "true",
+    "video": "https://www.youtube.com/embed/JLaXPyAdiy4"
 }
 ]

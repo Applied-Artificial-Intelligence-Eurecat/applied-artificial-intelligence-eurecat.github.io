@@ -33,6 +33,7 @@ interface ItemInstance {
   credentials?: boolean;
   description: string;
   longdescription: string[];
+  video?: string;
 }
 
 interface CarouselWidthProps {
@@ -162,15 +163,18 @@ function CardDemostrador(props: ItemProp) {
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{
-            position: "absolute" as "absolute",
-            top: "50%",
-            left: "50%",
+            position: "absolute",
             transform: {
-              xs: "translate(-50%, -50%)",
-              lg: "translate(-50%, -70%)",
+              xs: "translate(5%, 5%)",
+              lg: "translate(50%, 10%)",
             },
+            overflowY: "scroll",
+            height: {
+              xs: "auto",
+            },
+            maxHeight: "80%",
             width: {
-              xs: "90%",
+              xs: "80%",
               lg: "50%",
             },
             bgcolor: "background.paper",
@@ -204,19 +208,54 @@ function CardDemostrador(props: ItemProp) {
                 href={props.item.link}
                 underline="hover"
                 target="_blank"
-                sx={{ marginLeft: "5px", mb: "1", pb: "3" }}
+                sx={{ mb: "1", pb: "5" }}
               >
                 You can see the demonstrator by clicking here.
               </Link>
+              <p></p>
             </Grid>
-            <Grid item xs={12}><p></p> </Grid>
+            {props.item.video ? (
+              <Grid item xs={12}>
+                <Grid container justifyContent="center">
+                  <Grid
+                    item
+                    sx={{
+                      width: {
+                        xs: "315px",
+                        md: "635px",
+                        lg: "635px",
+                      },
+                      height: {
+                        lg: "350px",
+                        md: "350px",
+                        xs: "173px",
+                      },
+                    }}
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={props.item.video}
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    ></iframe>
+                  </Grid>
+                </Grid>
+              </Grid>
+            ) : (
+              <p></p>
+            )}
+
+            <Grid item xs={12}>
+              <p></p>{" "}
+            </Grid>
             <Grid item xs={12}>
               {props.item.credentials ? (
-                <Alert severity="warning" sx={{mt: "4"}}>
+                <Alert severity="warning" sx={{ mt: "4" }}>
                   This demostrator requires credentials to get its usage basis.{" "}
                   <Link
-                  target="blank_"
-                underline="hover"
+                    target="blank_"
+                    underline="hover"
                     href="mailto:maddi.etxegarai@eurecat.org"
                   >
                     Contact for more information
