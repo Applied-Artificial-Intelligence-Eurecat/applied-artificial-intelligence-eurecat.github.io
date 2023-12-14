@@ -1,13 +1,25 @@
 [
   {
+    "year": "2024",
+    "publications": [
+      "Fabri, M., & Ramalhinho, H. (2024). Assessing the In-house Logistics flows in the automotive industry. Computers & Industrial Engineering, 187, 109822. doi:10.1016/j.cie.2023.109822"
+    ]
+  },
+  {
     "year": "2023",
     "publications": [
+      "Ribalta, M., Pueyo-Ros, J., Corominas, L., Béjar, R., Mateu, C., & Rubión, E. (2023). Explainable Machine Learning Models for Predicting COVID-19 Cases in Catalonia Based on Wastewater Monitoring Data. Frontiers in Artificial Intelligence and Applications, 375, 262–266. doi:10.3233/FAIA230691",
+      "Velasquez-Camacho, L., Etxegarai, M., & de-Miguel, S. (2023). Implementing Deep Learning algorithms for urban tree detection and geolocation with high-resolution aerial, satellite, and ground-level images. Computers, Environment and Urban Systems, 105, 102025. doi:10.1016/j.compenvurbsys.2023.102025",
+      "Rondon, M., Ewane, E. B., Abdullah, M. M., Watt, M. S., Blanton, A., Abulibdeh, A., … Mohan, M. (2023). Remote sensing-based assessment of mangrove ecosystems in the Gulf Cooperation Council countries: a systematic review. Frontiers in Marine Science, 10. doi:10.3389/fmars.2023.1241928",
+      "Garcia-Llamas, E., Castro, J. M. G., Ramirez, G., & Pujante, J. (2023). On-line quality control and tool wear evaluation in trimming process by data analytics techniques. IOP Conference Series: Materials Science and Engineering, 1284(1), 012013. doi:10.1088/1757-899X/1284/1/012013",
       "Velasquez-Camacho L, Otero M, Basile B, Pijuan J, Corrado G. Current Trends and Perspectives on Predictive Models for Mildew Diseases in Vineyards. Microorganisms. 2023; 11(1):73. https://doi.org/10.3390/microorganisms11010073"
     ]
   },
   {
     "year": "2022",
     "publications": [
+      "Ewane, E. B., Bajaj, S., Velasquez-Camacho, L., Srinivasan, S., Maeng, J., Singla, A., … Mohan, M. (2023). Influence of urban forests on residential property values: A systematic review of remote sensing-based studies. Heliyon, 9(10). doi:10.1016/j.heliyon.2023.e20408",
+      "Guerrero-Latorre, L., Collado, N., Abasolo, N., Anzaldi, G., Bofill-Mas, S., Bosch, A., … Borrego, C. M. (2022). The Catalan Surveillance Network of SARS-CoV-2 in Sewage: design, implementation, and performance. Scientific Reports, 12(1), 16704. doi:10.1038/s41598-022-20957-3",
       "Nievas, N., Bonada, F., Echeverria, L., Abio, A., Lange, D., & Pujante, J. (2022). A Reinforcement Learning Control in Hot Stamping for Cycle Time Optimization. Materials, 15(14), 4825",
       "Etxegarai, M., Camps, M., Echeverria, L., Ribalta, M., Bonada, F., & Domingo, X. Virtual Sensors for Smart Data Generation and Processing in AI-Driven Industrial Applications.",
       "Ramírez, G., Gonzalez Castro, J. M., Orrit-Prat, J., Bonet, R., Cuadrado, N., Vilaseca, M., ... & Caro, J. (2022). Super-Hard DLC Coatings as an Alternative to Polycrystalline Diamond for Cutting Tools: Predictive Analysis of Aluminium Alloy Surface Quality. Lubricants, 10(7), 135",
