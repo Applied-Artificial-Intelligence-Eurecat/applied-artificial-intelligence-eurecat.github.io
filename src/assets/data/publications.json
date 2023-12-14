@@ -1,7 +1,17 @@
 [
   {
+    "year": "2024",
+    "publications": [
+      "Fabri, M., & Ramalhinho, H. (2024). Assessing the In-house Logistics flows in the automotive industry. Computers & Industrial Engineering, 187, 109822. doi:10.1016/j.cie.2023.109822"
+    ]
+  },
+  {
     "year": "2023",
     "publications": [
+      "Ribalta, M., Pueyo-Ros, J., Corominas, L., Béjar, R., Mateu, C., & Rubión, E. (2023). Explainable Machine Learning Models for Predicting COVID-19 Cases in Catalonia Based on Wastewater Monitoring Data. Frontiers in Artificial Intelligence and Applications, 375, 262–266. doi:10.3233/FAIA230691",
+      "Velasquez-Camacho, L., Etxegarai, M., & de-Miguel, S. (2023). Implementing Deep Learning algorithms for urban tree detection and geolocation with high-resolution aerial, satellite, and ground-level images. Computers, Environment and Urban Systems, 105, 102025. doi:10.1016/j.compenvurbsys.2023.102025",
+      "Rondon, M., Ewane, E. B., Abdullah, M. M., Watt, M. S., Blanton, A., Abulibdeh, A., … Mohan, M. (2023). Remote sensing-based assessment of mangrove ecosystems in the Gulf Cooperation Council countries: a systematic review. Frontiers in Marine Science, 10. doi:10.3389/fmars.2023.1241928",
+      "Garcia-Llamas, E., Castro, J. M. G., Ramirez, G., & Pujante, J. (2023). On-line quality control and tool wear evaluation in trimming process by data analytics techniques. IOP Conference Series: Materials Science and Engineering, 1284(1), 012013. doi:10.1088/1757-899X/1284/1/012013",
       "Velasquez-Camacho L, Otero M, Basile B, Pijuan J, Corrado G. Current Trends and Perspectives on Predictive Models for Mildew Diseases in Vineyards. Microorganisms. 2023; 11(1):73. https://doi.org/10.3390/microorganisms11010073"
     ]
   },
