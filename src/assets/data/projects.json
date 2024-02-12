@@ -17,7 +17,7 @@
         "topic": "Agrifood",
         "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/vitigeoss.PNG",
         "project": "VITIGEOSS",
-        "description": "Vineyard Innovative Tool based on the InteGration of Earth Observation Services and in-field Sensors.",
+        "description": "The objectives pursued by this project are: (i) promote robust weather forecasts for decision-making processes in the wine sector with the incorporation of sub-seasonal (4 weeks) and seasonal (3 months) prediction models; (ii) reduce the impact of phytopathogens on the crop by anticipating their occurrence and reducing pesticide use with reasonable accuracy, (iii) monitor and predict the largest number of vine phenological stages and plant physiological indicators through the use of satellites and drones, (iv) establish a management module for grapevine cultivation in 3 demo sites (Portugal, Italy and Spain) providing end-users with the opportunity to obtain applications for the optimization of vineyard management under a single entry point, and (v) equip decision makers in the wine sector with the necessary toolbox to make wine production in Europe environmentally and commercially sustainable.",
         "link": "https://vitigeoss.eu/"
     },
     {
@@ -31,7 +31,7 @@
         "topic": "Energy",
         "img": "https://raw.githubusercontent.com/Applied-Artificial-Intelligence-Eurecat/applied-artificial-intelligence-eurecat.github.io/main/src/assets/projects/energy.png",
         "project": "Greencharge",
-        "description": "Sustainable mobility with innovative business models, technologies and guidelines for cost efficient and succesful deployment and operation of charging infrastructure for EVs.",
+        "description": "Sustainable mobility with innovative business models, technologies and guidelines for cost efficient and successful deployment and operation of charging infrastructure for EVs. GreenCharge is testing all of these innovations in practical trials in Barcelona, Bremen and Oslo. Together, these trials cover a wide variety of factors: vehicle type (scooters, cars, bicycles), ownership model (private, shared individual use), charging locations (private residences, workplaces, public spaces, transport hubs), energy management (using solar power, load balancing at one charging station or within a neighbourhood, battery swapping), and charging support (booking, priority charging).",
         "link": "https://www.greencharge2020.eu/"
     }
 ]
