@@ -1,5 +1,14 @@
 [
   {
+    "year": "2025",
+    "publications": [
+      "Zang, Yipeng,... Torres, Pol,et.al. Suppressing Thermal Conductivity in SrTiO3 by Introducing Oxygen Isotope Disorder. The Journal of Physical Chemistry Letters, https://doi.org/10.1021/acs.jpclett.4c03034",
+      "Raquel Busqué, Matias Bossio, Raimon Fabregat, Francesc Bonada, Héctor Maicas, Jordi Pijuan, Albert Brigido. Hybrid CFD and Monte Carlo-driven optimization approach for heat sink design. https://www.mdpi.com/2076-3417/15/12/6939",
+      "Xiros, V.; Gonzalez Castro, J.M.; Fernandez-Pelaez, F.; Magoutas, B.; Christidis, K. Supply Chain Data Analytics for Digital Twins: A Comprehensive Framework. Appl. Sci. 2025, 15, 6939. https://doi.org/10.3390/app15126939",
+      "Velasquez-Camacho L, van Doorn N, Preisler H, Etxegarai M, Alas O, Gonzalez Castro JM, et al. (2025) Monitoring temporal changes in large urban street trees using remote sensing and deep learning. PLoS One 20(6): e0326562. https://doi.org/10.1371/journal.pone.0326562"
+    ]
+  },
+  {
     "year": "2024",
     "publications": [
       "Nievas, N., Pagès-Bernaus, A., Abio, A., Lange, D., Garcia-Llamas, E., Grané, M., … Bonada, F. (2024). A scalable Deep Q-Learning approach for hot stamping process under dynamic control environment. International Journal of Production Research, 1–22. https://doi.org/10.1080/00207543.2024.2411377",
