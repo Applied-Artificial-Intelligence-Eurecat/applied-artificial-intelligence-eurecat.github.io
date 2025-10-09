@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import teamJson from "../../assets/data/team.json";
-import teamImage from "../../assets/team.jpg";
+import teamImage from "../../assets/AAI_team_2025.jpeg";
 
 export function Team() {
     return (<Box>
